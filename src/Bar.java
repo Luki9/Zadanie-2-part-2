@@ -15,6 +15,9 @@ public class Bar {
         drink1.ingredient2.name = "cytryna";
         drink1.ingredient3 = new Ingredient();
         drink1.ingredient3.name = "rum";
+        drink1.ingredient1.volume = 50;
+        drink1.ingredient2.volume = 50;
+        drink1.ingredient3.volume = 50;
 
 
 
@@ -26,6 +29,12 @@ public class Bar {
         System.out.printf("Co zawiera: %s\n" , drink1.ingredient1.name);
         System.out.printf("Co zawiera: %s\n" , drink1.ingredient2.name);
         System.out.printf("Co zawiera: %s\n" , drink1.ingredient3.name);
+        System.out.printf("Skladniki w mililitrach: %s\n" ,drink1.ingredient1.volume );
+        System.out.printf("Skladniki w mililitrach: %s\n" ,drink1.ingredient2.volume );
+        System.out.printf("Skladniki w mililitrach: %s\n" ,drink1.ingredient3.volume );
+
+        int totalVolume =(drink1.ingredient1.volume + drink1.ingredient2.volume + drink1.ingredient3.volume);
+        System.out.printf("Pojemnosc: %s\n",  totalVolume);
 
 
 
